@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin">
+
+<div class="login" id="loginBox">
+  <h2>Admin</h2>
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="login()">دخول</button>
+</div>
+
+<div class="panel" id="panel">
+
+  <h2>لوحة التحكم</h2>
+
+  <input id="messageInput" placeholder="اكتب رسالة"><br>
+
+  <div class="admin-buttons">
+    <button onclick="change('good',1)">+ مكافأة</button>
+    <button onclick="change('good',-1)">- مكافأة</button>
+
+    <button onclick="change('bad',1)">+ عقاب</button>
+    <button onclick="change('bad',-1)">- عقاب</button>
+  </div>
+
+  <button onclick="reset()">تصفير</button>
+  <button onclick="save()">حفظ</button>
+  <button onclick="logout()">خروج</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
